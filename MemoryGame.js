@@ -41,7 +41,7 @@ Array.prototype.in_array = function (value) {
 var Level = function (evt, rows, cols, matches) {
     "use strict";
 
-    var cardsList           = 'img1;img2;img3;img4;img5;img6;img7;img8;img9;img10;img11;img12;img13;img14;img15;img16;img17;img18;img19;img20;img21;img22',
+    var cardsList           = 'img1;img2;img3;img4;img5;img6;img7;img8;img9;img10;img11;img12;img13;img14;img15;img17;img18;img19;img20;img21;img22;img23;img24;img26;img27;img28',
         playfieldWrapper    = document.getElementById('playfield-wrapper'),
         playfield           = document.createElement('table'),
         cards               = [],
@@ -67,15 +67,15 @@ var Level = function (evt, rows, cols, matches) {
 
                 var txt     = document.createElement('IMG');
                 txt.setAttribute("src", "images/" + this.text + ".png");
-                txt.setAttribute("width", "128");
-                txt.setAttribute("height", "128");
+                txt.setAttribute("width", "268");
+                txt.setAttribute("height", "268");
                 txt.setAttribute("z-index","-101");
                 txt.className = 'gameImage';
 
                 var txtBack     = document.createElement('IMG');
                 txtBack.setAttribute("src", "images/img0.png");
-                txtBack.setAttribute("width", "128");
-                txtBack.setAttribute("height", "128");
+                txtBack.setAttribute("width", "268");
+                txtBack.setAttribute("height", "268");
                 txtBack.setAttribute("z-index","-100");
                 txtBack.className = 'gameImage';
 
@@ -237,7 +237,7 @@ var Level = function (evt, rows, cols, matches) {
 
                             openCards = [];
                             mouseHndl = evt.attach('mousedown', playfield, play);
-                        }, 300);
+                        }, 600);
 
                         backFlipTimer = null;
                     }

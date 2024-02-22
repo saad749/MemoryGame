@@ -189,8 +189,8 @@ p strong {
 }
 
 .card {
-    width: 140px;
-    height: 140px;
+    width: 280px;
+    height: 280px;
     font-size: 64px;
     line-height: 70px;
     cursor: default;
@@ -214,8 +214,8 @@ p strong {
     border-radius: 3px;
     background-color: #fff;
     position: absolute;
-    width: 128px;
-    height: 128px;
+    width: 268px;
+    height: 268px;
     box-shadow: inset 0px 0px 4px #aaa;
     margin: 4px;
 }
@@ -243,23 +243,24 @@ p strong {
 /* Card animation */
 
 .card {
-    perspective: 100;
-    -webkit-perspective: 100;
-    -moz-perspective: 100;
+    perspective: 1000;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
 }
 
 .flipper {
     transform-style: preserve-3d;
-    transition: transform 0.15s linear;
+    transition: transform 0.30s linear;
     -webkit-transform-style: preserve-3d;
-    -webkit-transition: -webkit-transform 0.15s linear;
+    -webkit-transition: -webkit-transform 0.30s linear;
+    will-change: transform;
 }
 
 .face {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-    transition: opacity 0.15s linear;
-    -webkit-transition: opacity 0.15s linear;
+    transition: opacity 0.30s linear;
+    -webkit-transition: opacity 0.30s linear;
 }
 
 .flipfront {
@@ -306,9 +307,9 @@ p strong {
 }
 
 .pulse {
-    -moz-animation: pulse 0.2s ease-in-out 5 alternate;
-    -webkit-animation: pulse 0.2s ease-in-out 5 alternate;
-    animation: pulse 0.2s ease-in-out 5 alternate;
+    -moz-animation: pulse 0.4s ease-in-out 5 alternate;
+    -webkit-animation: pulse 0.4s ease-in-out 5 alternate;
+    animation: pulse 0.4s ease-in-out 5 alternate;
 }
 
 .play-field.win td .flipper {
